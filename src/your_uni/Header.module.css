@@ -1,0 +1,36 @@
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.45;
+}
+
+.navigation ul {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    list-style-type: none;
+    gap: 1.8rem;
+}
+
+.navigation a {
+    font-weight: 400;
+    color: #333;
+    text-decoration: none;
+    padding-bottom:.1rem;
+    display: inline-block;
+}
+
+.navigation a:hover {
+    border-bottom: 0.15rem solid #333;
+}
+
+.navigation a.selected {
+    color: #000;
+    border-bottom: 0.15rem solid #E16259;
+}

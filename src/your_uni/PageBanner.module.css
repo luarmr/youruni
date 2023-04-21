@@ -1,0 +1,47 @@
+.wrapper {
+    padding-top: 8rem;
+    padding-bottom: 6rem;
+    padding-right: 50%;
+    margin-bottom:1.5rem;
+    background-image: url("../../public/assets/fancy_image.png");
+    background-position: 88%;
+    background-size: 32%;
+    background-repeat: no-repeat;
+    letter-spacing: -0.1em;
+}
+
+.title,
+.description {
+    color: #000000;
+    margin-bottom: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 4.3rem;
+    line-height: 1;
+}
+
+.description {
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 1.45;
+    letter-spacing: 0;
+}
+
+@media (max-width: 1000px) {
+    .wrapper {
+        padding-right: 20%;
+        background-position: 100% 50%;
+        background-size: 20%;
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        padding-right: 0;
+        background: none;
+    }
+}

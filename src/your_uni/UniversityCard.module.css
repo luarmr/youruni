@@ -1,0 +1,48 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.75rem 1rem;
+    background: white;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+.city {
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    color: #666666;
+    order: -1;
+}
+
+.city, .name {
+    margin-bottom: 0.8rem;
+}
+
+.link {
+    font-weight: 400;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    /*color: #E16259; contrast a11y issue*/
+    color: #D93B30;
+    text-decoration: none;
+    display: inline-block;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: break-word;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.name {
+     font-weight: 700;
+     font-size: 1.3rem;
+     line-height: 1.35;
+ }
+
+

@@ -1,26 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import styles from './App.module.css';
+import SkipToMainContentReactComponent from './base_components/SkipToMainContent.react-component';
+import Header from './your_uni/Header.react-component';
+import PageBanner from './your_uni/PageBanner.react-component';
+import Universities from './your_uni/Universities.mobx-store';
+import UniversitiesList from './your_uni/UniversityList.react-component';
 
-function App() {
+const universityStore = new Universities();
+const App = function App() {
+  const mainContentId = 'main_content';
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={styles.wrapper}>
+      <SkipToMainContentReactComponent mainContentId={mainContentId} />
+      <Header />
+      <main id={mainContentId}>
+        <section>
+          <PageBanner />
+          <UniversitiesList UniversitiesStore={universityStore} />
+        </section>
+      </main>
     </div>
   );
-}
+};
 
 export default App;

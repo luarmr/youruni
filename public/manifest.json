@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "YourUni",
+  "name": "YourUni Notion exercise",
   "icons": [
     {
       "src": "favicon.ico",
@@ -8,14 +8,29 @@
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
+      "src": "touch-76.png",
       "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "76x76"
     },
     {
-      "src": "logo512.png",
+      "src": "touch-120.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "120x120"
+    },
+    {
+      "src": "touch-152.png",
+      "type": "image/png",
+      "sizes": "152x152"
+    },
+    {
+      "src": "touch-167.png",
+      "type": "image/png",
+      "sizes": "167x167"
+    },
+    {
+      "src": "touch-180.png",
+      "type": "image/png",
+      "sizes": "180x180"
     }
   ],
   "start_url": ".",
